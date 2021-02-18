@@ -5,9 +5,11 @@ For details, please see http://ics-software-engineering.github.io/meteor-applica
 To-do:
 Create a README file providing information on:
   What is complete so far?
+  
   Templates for project and getting started
   
   What is pending?
+  
   Landing Page, Login Page, Administrator Tab, 
   
   List of team members specifying under each team member's name: what they worked on in the project so far, and what they will be handling next.
