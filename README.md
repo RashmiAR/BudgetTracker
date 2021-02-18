@@ -13,7 +13,10 @@ Create a README file providing information on:
   List of team members specifying under each team member's name: what they worked on in the project so far, and what they will be handling next.
   
   Rashmi: Login Page with 2 factor authentication
+  
   Brody: Landing/Reports/Logo, Income & Expenses Pages
+  
   Irene: Administrator Tab
+  
   Josh: User home page, Income & Expenses Pages
   
