@@ -2,23 +2,19 @@
 
 For details, please see http://ics-software-engineering.github.io/meteor-application-template-react/
 
-To-do:
-Create a README file providing information on:
-  What is complete so far?
-  
-  Templates for project and getting started
-  
-  What is pending?
-  
-  Landing Page, Login Page, Administrator Tab, 
-  
-  List of team members specifying under each team member's name: what they worked on in the project so far, and what they will be handling next.
-  
-  Rashmi: Login Page with 2 factor authentication
-  
-  Brody: Landing/Reports/Logo, Income & Expenses Pages
-  
-  Irene: Administrator Tab
-  
-  Josh: User home page, Income & Expenses Pages
+# Budget Tracker Application
+
+## Completed work:
+- Report "implementation" writeup
+- Created base application that with chosen frameworks (React, Meteor, Semantic UI)
+
+## Pending:
+- We are each working on the landing page, login page, administrator tab, and income & expense pages of the application
+
+## Team:
+- Rashmi: working on the login page with 2-factor authentication
+- Brody: currently working on the landing page, logo, and income & expense pages
+- Irene: creating the administrator tab
+- Josh: creating the user home page and the icnoem & expense pages
+
   
