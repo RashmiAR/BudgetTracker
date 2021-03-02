@@ -13,6 +13,7 @@ import AddStuff from '../pages/AddStuff';
 import EditStuff from '../pages/EditStuff';
 import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
+import EmailOtp from '../pages/EmailOtp';
 import Signup from '../pages/Signup';
 import Signout from '../pages/Signout';
 
@@ -26,6 +27,7 @@ class App extends React.Component {
             <Switch>
               <Route exact path="/" component={Landing}/>
               <Route path="/signin" component={Signin}/>
+              <Route path="/emailotp" component={EmailOtp}/>
               <Route path="/signup" component={Signup}/>
               <Route path="/signout" component={Signout}/>
               <ProtectedRoute path="/list" component={ListStuff}/>

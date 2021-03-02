@@ -36,6 +36,7 @@ export default class Signin extends React.Component {
   /** Render the signin form. */
   render() {
     const { from } = this.props.location.state || { from: { pathname: '/' } };
+    // const { from } = this.props.location.state || { from: { pathname: '/emailotp' } };
     // if correct authentication, redirect to page instead of login screen
     if (this.state.redirectToReferer) {
       return <Redirect to={from}/>;

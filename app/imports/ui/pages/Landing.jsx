@@ -12,8 +12,8 @@ class Landing extends React.Component {
           </Grid.Column>
 
           <Grid.Column width={8}>
-            <h1>Welcome to this template</h1>
-            <p>Now get to work and modify this app!</p>
+            <h1>Here is our landing page</h1>
+            <p>Need to work and modify this app!</p>
           </Grid.Column>
 
         </Grid>
