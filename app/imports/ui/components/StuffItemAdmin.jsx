@@ -8,9 +8,8 @@ class StuffItemAdmin extends React.Component {
     return (
         <Table.Row>
           <Table.Cell>{this.props.stuff.name}</Table.Cell>
-          <Table.Cell>{this.props.stuff.quantity}</Table.Cell>
-          <Table.Cell>{this.props.stuff.condition}</Table.Cell>
-          <Table.Cell>{this.props.stuff.owner}</Table.Cell>
+          <Table.Cell>{this.props.stuff.userEmail}</Table.Cell>
+          <Table.Cell>{this.props.stuff.remove}</Table.Cell>
         </Table.Row>
     );
   }

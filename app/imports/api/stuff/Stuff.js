@@ -13,7 +13,7 @@ class StuffsCollection {
     this.schema = new SimpleSchema({
       name: String,
       quantity: Number,
-      owner: String,
+      userEmail: String,
       condition: {
         type: String,
         allowedValues: ['excellent', 'good', 'fair', 'poor'],

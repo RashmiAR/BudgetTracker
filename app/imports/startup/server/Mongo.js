@@ -5,7 +5,7 @@ import { Stuffs } from '../../api/stuff/Stuff.js';
 
 /** Initialize the database with a default data document. */
 function addData(data) {
-  console.log(`  Adding: ${data.name} (${data.owner})`);
+  console.log(`  Adding: ${data.name} (${data.userEmail})`);
   Stuffs.collection.insert(data);
 }
 
