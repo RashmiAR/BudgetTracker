@@ -7,7 +7,7 @@ import { Stuffs } from '../../api/stuff/Stuff';
 Meteor.publish(Stuffs.userPublicationName, function () {
   if (this.userId) {
     const username = Meteor.users.findOne(this.userId).username;
-    return Stuffs.collection.find({ owner: username });
+    return Stuffs.collection.find({ userEmail: username });
   }
   return this.ready();
 });
