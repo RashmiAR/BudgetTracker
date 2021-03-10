@@ -7,13 +7,13 @@ class Landing extends React.Component {
     return (
         <Grid id='landing-page' verticalAlign='middle' textAlign='center' container>
 
-          <Grid.Column width={4}>
-            <Image size='small' circular src="/images/meteor-logo.png"/>
+          <Grid.Column width={8}>
+            <Image size='huge' circular src="/images/BudgetTrackerLogo.png"/>
           </Grid.Column>
 
           <Grid.Column width={8}>
-            <h1>Here is our landing page</h1>
-            <p>Need to work and modify this app!</p>
+            <h1>Best Budget Tracker</h1>
+            <p>Sign in or sign up</p>
           </Grid.Column>
 
         </Grid>
