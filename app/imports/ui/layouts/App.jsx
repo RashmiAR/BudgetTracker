@@ -16,6 +16,13 @@ import Signin from '../pages/Signin';
 import EmailOtp from '../pages/EmailOtp';
 import Signup from '../pages/Signup';
 import Signout from '../pages/Signout';
+import Income from '../pages/Income';
+import Expense from '../pages/Expense';
+import AddIncome from '../pages/AddIncome';
+import AddExpense from '../pages/AddExpense';
+import EditIncome from '../pages/EditIncome';
+import EditExpense from '../pages/EditExpense';
+import Home from '../pages/Home';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -30,9 +37,16 @@ class App extends React.Component {
               <Route path="/emailotp" component={EmailOtp}/>
               <Route path="/signup" component={Signup}/>
               <Route path="/signout" component={Signout}/>
+              <ProtectedRoute path="/home" component={Home}/>
               <ProtectedRoute path="/list" component={ListStuff}/>
+              <ProtectedRoute path="/income" component={Income}/>
+              <ProtectedRoute path="/addincome" component={AddIncome}/>
+              <ProtectedRoute path="/expense" component={Expense}/>
+              <ProtectedRoute path="/addexpense" component={AddExpense}/>
               <ProtectedRoute path="/add" component={AddStuff}/>
               <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
+              <ProtectedRoute path="/editincome/:_id" component={EditIncome}/>
+              <ProtectedRoute path="/editexpense/:_id" component={EditExpense}/>
               <AdminProtectedRoute path="/admin" component={ListStuffAdmin}/>
               <Route component={NotFound}/>
             </Switch>
