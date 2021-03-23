@@ -13,7 +13,6 @@ import AddStuff from '../pages/AddStuff';
 import EditStuff from '../pages/EditStuff';
 import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
-import EmailOtp from '../pages/EmailOtp';
 import Signup from '../pages/Signup';
 import Signout from '../pages/Signout';
 import Income from '../pages/Income';
@@ -23,6 +22,8 @@ import AddExpense from '../pages/AddExpense';
 import EditIncome from '../pages/EditIncome';
 import EditExpense from '../pages/EditExpense';
 import Home from '../pages/Home';
+import Terms from '../pages/Terms';
+import AboutUs from '../pages/AboutUs';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -34,10 +35,11 @@ class App extends React.Component {
             <Switch>
               <Route exact path="/" component={Landing}/>
               <Route path="/signin" component={Signin}/>
-              <Route path="/emailotp" component={EmailOtp}/>
               <Route path="/signup" component={Signup}/>
               <Route path="/signout" component={Signout}/>
               <ProtectedRoute path="/home" component={Home}/>
+              <Route path='/terms' component={Terms}/>
+              <Route path='/about' component={AboutUs}/>
               <ProtectedRoute path="/list" component={ListStuff}/>
               <ProtectedRoute path="/income" component={Income}/>
               <ProtectedRoute path="/addincome" component={AddIncome}/>
