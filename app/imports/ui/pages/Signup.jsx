@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, Redirect } from 'react-router-dom';
-import { Container, Form, Grid, Header, Message, Segment } from 'semantic-ui-react';
+import { Container, Form, Grid, Header, Message, Segment, Popup } from 'semantic-ui-react';
 import { Accounts } from 'meteor/accounts-base';
 
 /**
@@ -11,7 +11,7 @@ class Signup extends React.Component {
   /** Initialize state fields. */
   constructor(props) {
     super(props);
-    this.state = { email: '', password: '', error: '', redirectToReferer: false };
+    this.state = { email: '', password: '', confirmpassword: '', error: '', redirectToReferer: false };
   }
 
   /** Update the form controls each time the user interacts with them. */
@@ -92,31 +92,40 @@ class Signup extends React.Component {
       return true;
     }
 
-    let err_msg = '';
+    const err_msg = [];
     if (!hasSpecial) {
-      err_msg = err_msg.concat('Password must contain a special character.\n');
+      err_msg.push('Include a special character. Examples: ! @ # % ^ & * ( )');
     }
     if (!hasUpperCase) {
-      err_msg = err_msg.concat('Password must contain an upper case character.\n');
+      err_msg.push('Password must contain an upper case character.');
     }
     if (!hasLowerCase) {
-      err_msg = err_msg.concat('Password must contain a lower case character.\n');
+      err_msg.push('Password must contain a lower case character.\n');
     }
     if (!hasNumeric) {
-      err_msg = err_msg.concat('Password must contain a numeric character.\n');
+      err_msg.push('Password must contain a numeric character.\n');
     }
 
-    this.setState({ error: err_msg });
+    this.setState({ error: err_msg, password: '', confirmpassword: '' });
     return false;
   }
 
   /** Display the signup form. Redirect to add page after successful registration and login. */
   render() {
-    const { from } = this.props.location.state || { from: { pathname: '/add' } };
+    const { from } = this.props.location.state || { from: { pathname: '/home' } };
     // if correct authentication, redirect to from: page instead of signup screen
     if (this.state.redirectToReferer) {
       return <Redirect to={from}/>;
     }
+    const passwordRequirements =
+        <ul>
+          <li>Must be 8 - 32 characters long</li>
+          <li>At least 1 upper case character</li>
+          <li>At least 1 lower case character</li>
+          <li>At least 1 numeric character</li>
+          <li>At least 1 special character</li>
+          <li>New password correctly entered twice</li>
+        </ul>;
     return (
       <Container id="signup-page">
         <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
@@ -139,14 +148,22 @@ class Signup extends React.Component {
                 <Grid columns={2} stackable textAlign='left'>
                   <Grid.Row verticalAlign='middle'>
                     <Grid.Column>
-                      <Form.Input
-                          label=""
-                          icon="lock"
-                          iconPosition="left"
-                          name="password"
-                          placeholder="Password"
-                          type="password"
-                          onChange={this.handleChange}
+                      <Popup
+                          header='Password Requirements:'
+                          hoverable
+                          content={passwordRequirements}
+                          position='bottom left'
+                          flowing
+                          trigger={<Form.Input
+                              label="Password"
+                              icon="lock"
+                              iconPosition="left"
+                              name="password"
+                              placeholder="Password"
+                              type="password"
+                              value={this.state.password}
+                              onChange={this.handleChange}
+                          />}
                       />
                     </Grid.Column>
                     <Grid.Column>
@@ -162,20 +179,22 @@ class Signup extends React.Component {
                     </Grid.Column>
                   </Grid.Row>
                 </Grid>
-                <Form.Button id="signup-form-submit" content="Submit"/>
+                <Form.Button id="signup-form-submit" content="SIGN UP"/>
               </Segment>
             </Form>
             <Message>
-              Already have an account? Login <Link to="/signin">here</Link>
+              Already have an account? <Link to="/signin">LOGIN</Link>
             </Message>
             {this.state.error === '' ? (
               ''
             ) : (
-              <Message
-                error
-                header="Registration was not successful"
-                content={this.state.error}
-              />
+              <Message error>
+                <Message.Header>Registration was not successful</Message.Header>
+                <p>
+                  Your password is missing one or more of the following parameters:
+                </p>
+                <Message.List items={this.state.error}/>
+              </Message>
             )}
           </Grid.Column>
         </Grid>
