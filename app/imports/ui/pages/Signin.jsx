@@ -137,17 +137,13 @@ export default class Signin extends React.Component {
           <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
             <Grid.Column>
               <Header as="h2" textAlign="center">
-                You should have recieved an email with OTP.
-                Please enter that otp in the form below as it shows in the email.
+                You should have received an email with OTP.<br />
+                Please enter the OTP in the form below.
               </Header>
-
-              {/* this button will allow the email to be sent */}
-              <Form.Button content="Send verification otp" /* onSubmit={this.sendEmail} *//>
-
               <Form onSubmit={this.submit_otp}>
                 <Segment>
                   <Form.Input
-                      label="Otp"
+                      label="OTP"
                       icon="lock"
                       iconPosition="left"
                       name="otp_input"
