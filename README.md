@@ -7,14 +7,18 @@ For details, please see http://ics-software-engineering.github.io/meteor-applica
 ## Completed work:
 - Report "implementation" writeup
 - Created base application that with chosen frameworks (React, Meteor, Semantic UI)
+- Completed landing page, income & expense pages
+- Completed administrator tab
+- Completed login page with 2-factor authentication
+- Installed Iroh.js
 
 ## Pending:
-- We are each working on the landing page, login page, administrator tab, and income & expense pages of the application
+- NA
 
 ## Team:
-- Rashmi: working on the login page with 2-factor authentication
-- Brody: currently working on the landing page, logo, and income & expense pages
-- Irene: creating the administrator tab
-- Josh: creating the user home page and the icnoem & expense pages
+- Rashmi: NA - Completed
+- Brody: NA - Completed
+- Irene: NA - Completed
+- Josh: NA - Completed
 
   
