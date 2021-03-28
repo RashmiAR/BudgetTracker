@@ -1,6 +1,5 @@
 import React from 'react';
-import { Container, Header, Image } from 'semantic-ui-react';
-import NavBar from '../components/NavBar';
+import { Container, Header } from 'semantic-ui-react';
 
 /** Render a Not Found page if the user enters a URL that doesn't match any route. */
 class Terms extends React.Component {

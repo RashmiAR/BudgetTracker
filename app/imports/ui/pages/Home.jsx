@@ -1,29 +1,29 @@
 import React from 'react';
-import { Grid, Image, Container, Table, Header, Loader, Segment } from 'semantic-ui-react';
+import { Grid, Container, Table, Header, Loader } from 'semantic-ui-react';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { Incomes } from '../../api/income/Income';
-import IncomeItem from '../components/IncomeItem';
 import { Expenses } from '../../api/expense/Expense';
-import ExpenseItem from '../components/ExpenseItem';
 
 /** A simple static component to render some text for the landing page. */
 class Home extends React.Component {
 
-  getIncomeAmount(){
+  getIncomeAmount() {
     let amount = 0;
+    // eslint-disable-next-line no-return-assign
     this.props.incomes.map((income) => amount += income.amount);
     return Math.round(amount * 100) / 100;
   }
 
-  getExpenseAmount(){
+  getExpenseAmount() {
     let amount = 0;
+    // eslint-disable-next-line no-return-assign
     this.props.expenses.map((expense) => amount += expense.amount);
     return Math.round(amount * 100) / 100;
   }
 
-  makeTable(data){
+  makeTable(data) {
     return (
       <Table celled>
         <Table.Header>
@@ -33,8 +33,7 @@ class Home extends React.Component {
           </Table.Row>
         </Table.Header>
         <Table.Body>
-          {data.map((d) =>
-            <React.Fragment key={d._id}>
+          {data.map((d) => <React.Fragment key={d._id}>
               <Table.Row>
                 <Table.Cell>{d.name}</Table.Cell>
                 <Table.Cell>${d.amount}</Table.Cell>
@@ -42,7 +41,7 @@ class Home extends React.Component {
             </React.Fragment>)
           }
         </Table.Body>
-      </Table>)
+      </Table>);
   }
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
