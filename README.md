@@ -13,11 +13,13 @@ For details, please see http://ics-software-engineering.github.io/meteor-applica
 - Installed Iroh.js
 
 ## Pending:
-- NA
+- Update About Us page
+- Update Terms and Conditions page
+- Add ContactUs page
 
 ## Team:
-- Rashmi: NA - Completed
-- Brody: NA - Completed
+- Rashmi: NA - Complete Terms and Conditions pages
+- Brody: NA - Update About Us
 - Irene: NA - Completed
 - Josh: NA - Completed
 
