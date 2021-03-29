@@ -2,7 +2,7 @@
 
 For details, please see http://ics-software-engineering.github.io/meteor-application-template-react/
 
-# Budget Tracker Application
+# Budget Tracker Application 02/21/2021 - 03/21/2021
 
 ## Completed work:
 - Report "implementation" writeup
