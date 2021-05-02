@@ -2,25 +2,31 @@
 
 For details, please see http://ics-software-engineering.github.io/meteor-application-template-react/
 
-# Budget Tracker Application 02/21/2021 - 03/21/2021
-
-## Completed work:
-- Report "implementation" writeup
-- Created base application that with chosen frameworks (React, Meteor, Semantic UI)
-- Completed landing page, income & expense pages
-- Completed administrator tab
-- Completed login page with 2-factor authentication
-- Installed Iroh.js
-
-## Pending:
-- Update About Us page
-- Update Terms and Conditions page
-- Add ContactUs page
+# Budget Tracker Application
 
 ## Team:
-- Rashmi: NA - Complete Terms and Conditions pages
-- Brody: NA - Update About Us
-- Irene: NA - Completed
-- Josh: NA - Completed
+- Rashmi: Incident Response Plan
+- Brody: Release and README
+- Irene: WIKI
+- Josh: Final Security Review
 
+## Installation
+
+First, [install Meteor](https://www.meteor.com/install).
+
+Second, go to our GitHub repository, and click the "Clone or download" button to download your new GitHub repo to your local file system.
+
+Third, cd into the app/ directory of your local copy of the repo, and install third party libraries with:
+
+```
+$ meteor npm install
+```
+
+## Running the system
+
+Once the libraries are installed, you can run the application by invoking the "start" script in the [package.json file](https://github.com/RashmiAR/BudgetTracker/blob/master/app/package.json):
+
+```
+$ meteor npm run start
+```
   
