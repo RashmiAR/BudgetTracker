@@ -33,7 +33,7 @@ $ meteor npm run start
 
 
 ## Links
--[Online Repository](https://github.com/RashmiAR/BudgetTracker)
--Final Project Documentation File
--[Release version of your program](https://github.com/RashmiAR/BudgetTracker/releases)
--Wiki Page
+- [Online Repository](https://github.com/RashmiAR/BudgetTracker)
+- Final Project Documentation File
+- [Release version of your program](https://github.com/RashmiAR/BudgetTracker/releases)
+- Wiki Page
