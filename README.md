@@ -29,4 +29,11 @@ Once the libraries are installed, you can run the application by invoking the "s
 ```
 $ meteor npm run start
 ```
-  
+## Developer Notes
+
+
+## Links
+-[Online Repository](https://github.com/RashmiAR/BudgetTracker)
+-Final Project Documentation File
+-[Release version of your program](https://github.com/RashmiAR/BudgetTracker/releases)
+-Wiki Page
