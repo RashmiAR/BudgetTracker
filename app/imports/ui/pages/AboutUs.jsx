@@ -16,7 +16,7 @@ class AboutUs extends React.Component {
                 style={{ paddingTop: '50px', paddingBottom: '50px', marginTop: '70px' }}>
               <Grid textAlign={'center'} columns={'equal'}>
                 <Grid.Column>
-                  <Image centered style={{ width: '150px' }} circular src={'/images/brody.jpg'}/>
+                  <Image centered style={{ width: '150px' }} circular src={'/images/brody.png'}/>
                   <Header inverted as={'h4'}>Brody Uehara</Header>
                 </Grid.Column>
                 <Grid.Column>
