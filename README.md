@@ -34,6 +34,6 @@ Throught the development and release of our application, we found testing and di
 
 ## Links
 - [Online Repository](https://github.com/RashmiAR/BudgetTracker)
-- [Final Project Documentation File](https://github.com/RashmiAR/BudgetTracker/FinalProject_Documentation.pdf)
+- [Final Project Documentation File](https://github.com/RashmiAR/BudgetTracker/blob/master/FinalProject_Documentation.pdf)
 - [Release version of your program](https://github.com/RashmiAR/BudgetTracker/releases)
 - [Wiki Page](https://github.com/RashmiAR/BudgetTracker/wiki)
