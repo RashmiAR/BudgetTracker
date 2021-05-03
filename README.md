@@ -30,7 +30,7 @@ Once the libraries are installed, you can run the application by invoking the "s
 $ meteor npm run start
 ```
 ## Developer Notes
-Throught the development and release of our application, we found testing and diagnosing potential vulnerabilities to be the most difficult part. Development of our application was easy. However, learning how to break our applications security features was difficult as there are no guides on hacking into our program. 
+Throught the development and release of our application, we found testing and diagnosing potential vulnerabilities to be the most difficult part. Development of our application was easy. However, learning how to break our application's security features was difficult as there are no guides on hacking into our program. 
 
 ## Links
 - [Online Repository](https://github.com/RashmiAR/BudgetTracker)
