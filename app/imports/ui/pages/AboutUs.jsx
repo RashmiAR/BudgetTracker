@@ -20,7 +20,7 @@ class AboutUs extends React.Component {
                   <Header inverted as={'h4'}>Brody Uehera</Header>
                 </Grid.Column>
                 <Grid.Column>
-                  <Image centered style={{ width: '150px' }} circular src={'/images/'}/>
+                  <Image centered style={{ width: '150px' }} circular src={'/images/joshua.png'}/>
                   <Header inverted as={'h4'}>Joshua Hartmann</Header>
                 </Grid.Column>
                 <Grid.Column>
